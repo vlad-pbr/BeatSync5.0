@@ -52,7 +52,8 @@ namespace BeatSync
                         k < N;
                         k++)
                     {
-                        cpxFrequencySigma += Signal[k] * Complex.Exp(new Complex(0, -2 * Math.PI * n * k / N));
+                        cpxFrequencySigma += Signal[k] * Complex.Exp(new Complex(0, -2 *
+                                             Math.PI * n * k / N));
                     }
 
                     // Store calculated result
@@ -64,8 +65,14 @@ namespace BeatSync
             }
 
             /// <summary>
-            /// More efficient implementation of DFT
+            /// More efficient implementation of DFT.
+            /// THIS CODE IS AN OPEN-SOURCE IMPLEMENTATION OF FFT AND WAS
+            /// NOT WRITTEN FOR BEATSYNC.
             /// </summary>
+            /// <param name="dir">FFT direction. 1 for FFT, -1 for Inverse FFT.</param>
+            /// <param name="m">Power of 2 that is the sample amount.</param>
+            /// <param name="x">Real part of the samples.</param>
+            /// <param name="y">Imaginary part of the samples.</param>
             public static void FFT(short dir, int m, double[] x, double[] y)
             {
                 int n, i, i1, j, k, i2, l, l1, l2;
@@ -1402,7 +1409,7 @@ namespace BeatSync
         }
 
         /// <summary>
-        /// Gives information about the currently loaded audio.
+        /// Returns information about the currently loaded audio.
         /// </summary>
         /// <returns>Returns information about the currently loaded audio.</returns>
         public override string ToString()

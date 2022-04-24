@@ -58,7 +58,8 @@ namespace BeatSync
             protected override bool RunInBackground(params string[] @params)
             {
                 // Create a next song player and a crossfade timer
-                Android.Media.MediaPlayer nextSong = Android.Media.MediaPlayer.Create(Android.App.Application.Context, Android.Net.Uri.Parse(@params[0]));
+                Android.Media.MediaPlayer nextSong = Android.Media.MediaPlayer.Create(Android.App.Application.Context,
+                                                                                      Android.Net.Uri.Parse(@params[0]));
                 System.Diagnostics.Stopwatch faderTimer = new System.Diagnostics.Stopwatch();
 
                 // Set up the next song
