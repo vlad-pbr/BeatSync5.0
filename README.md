@@ -1,6 +1,6 @@
 # BeatSync 5.0
 
-BeatSync was a final project of mine at the college of Kfar Hayarok, 2018. It was an attempt of mine to go all out on a project which combined a bunch of things I liked and a bunch of things I wanted to learn into one - code, music (Digital Dignal Processing) and hardware (Arduino).
+BeatSync was a final project of mine at the college of Kfar Hayarok, 2018. It was an attempt of mine to go all out on a project which combined a bunch of things I liked and a bunch of things I wanted to learn into one - code, music (Digital Signal Processing) and hardware (Arduino).
 
 ## Architecture
 
@@ -48,7 +48,7 @@ Here is the same audio passed through a lowpass filter:
 
 ## Downsides
 
-Now, the app __does__ work more or less. This all sounds cool and all, but falls in many ways. I wrote the project while only having some experience in C#, without having to write any production code before. Code versioning is non-existent - the only reason this version is 5.0 is because every time I wanted a new version, I just initialized a new project in Visual Studio with the new name. The WAV codec can do just that - read and write WAV files. It barely even achieves that - some WAV files which include metadata can outright crash the app. The filter implementation is very amateurish and peak detection is unreliable. Overall there is room for improvement.
+Now, the app __does__ work more or less. This all sounds cool and all, but falls in many ways. I wrote the project while only having some experience in C#, without having to write any production code before. Code versioning is non-existent - the only reason this version is 5.0 is because every time I wanted a new version, I just initialized a new project in Visual Studio with the new name. The app only recognizes the specific bluetooth adapter used by me during testing. The WAV codec can do just that - read and write WAV files. It barely even achieves that - some WAV files which include metadata can outright crash the app. The filter implementation is very amateurish and peak detection is unreliable. Overall there is room for improvement.
 
 ## What do?
 
