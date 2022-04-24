@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:background="@drawable/button"
+            android:src="@drawable/icon_note"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.875"
+            android:id="@+id/imgPlaylist" />
+        <ImageView
+            android:background="@drawable/button"
+            android:src="@drawable/icon_settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:alpha="0.875"
+            android:id="@+id/imgSettings" />
+    </RelativeLayout>
+    <TextView
+        android:text="N/A"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp"
+        android:gravity="center"
+        android:textColor="#3498db"
+        android:id="@+id/BPM"
+        android:textSize="100sp" />
+    <TextView
+        android:text="BPM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBPM"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp" />
+    <TextView
+        android:text="▶️"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSong"
+        android:textSize="17.5sp"
+        android:gravity="center"
+        android:layout_margin="10dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:background="@drawable/button"
+            android:src="@drawable/txt_pair"
+            android:layout_width="235dp"
+            android:layout_height="235dp"
+            android:layout_marginBottom="-20dp"
+            android:id="@+id/btnMain"
+            android:alpha="0.875"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/txtStatus" />
+        <TextView
+            android:text="Device not paired."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#800000"
+            android:id="@+id/txtStatus"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textSize="25sp" />
+    </RelativeLayout>
+</LinearLayout>

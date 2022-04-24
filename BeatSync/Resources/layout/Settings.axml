@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:orientation="vertical"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent">
+    <TextView
+        p1:text="Pick your age"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:gravity="center"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginRight="10dp"
+        p1:layout_marginTop="25dp"
+        p1:textSize="22sp" />
+    <NumberPicker
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/npAgePicker"
+        p1:minWidth="25px"
+        p1:minHeight="25px" />
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content">
+        <TextView
+            p1:text="Safe BPM range: "
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:layout_margin="15dp"
+            p1:gravity="center"
+            p1:layout_centerHorizontal="true"
+            p1:layout_alignParentTop="true"
+            p1:textSize="18sp"
+            p1:id="@+id/txtRange" />
+        <TextView
+            p1:text="CLEAR LOCAL CACHE"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:minHeight="50dp"
+            p1:gravity="center"
+            p1:layout_centerHorizontal="true"
+            p1:layout_above="@+id/btnDone"
+            p1:textSize="30sp"
+            p1:id="@+id/btnClearCache" />
+        <TextView
+            p1:text="DONE"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:minHeight="50dp"
+            p1:gravity="center"
+            p1:layout_centerHorizontal="true"
+            p1:layout_alignParentBottom="true"
+            p1:textSize="30sp"
+            p1:id="@+id/btnDone" />
+    </RelativeLayout>
+</LinearLayout>
